@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Wilde</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        h1 {
+            margin-top: 0;
+            color: #555;
+        }
+        .quote {
+            font-style: italic;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./3565.jpg" alt="Oscar Wilde">
+        <h1>Oscar Wilde</h1>
+        <p>Born in Dublin, Ireland, October 16, 1854</p>
+        <p>Died: November 30, 1900</p>
+        <p>Oscar Wilde was an Irish playwright, poet, and author of numerous short stories and one novel. Known for his biting wit and an abundance of aphorisms, he became one of the most successful playwrights of the late Victorian era in London and a great celebrity of his day.</p>
+        <p class="quote">"Several of his plays continue to be widely performed, especially *The Importance of Being Earnest*."</p>
+        <button onclick="showMore()">Show More</button>
+        <div id="moreInfo" style="display: none;">
+            <p>As the result of a widely covered series of trials, Wilde suffered a dramatic downfall and was imprisoned for two years hard labour after being convicted of "gross indecency" with other men. After his release, he moved to France, never returned to Ireland or Britain, and died in poverty.</p>
+        </div>
+    </div>
+    <script>
+        function showMore() {
+            const moreInfo = document.getElementById('moreInfo');
+            if (moreInfo.style.display === 'none') {
+                moreInfo.style.display = 'block';
+            } else {
+                moreInfo.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
